@@ -209,7 +209,7 @@ function quit(){
         completed: c
             });
         })
-        window.location = "thanYou.html";
+        window.location = "thankYou.html";
     })
     }
     else{
