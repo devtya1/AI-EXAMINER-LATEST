@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>Realtime Filter Webapp using PoseNet Neural Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://www.createjs.com/Demos/EaselJS/assets/preloadjs-NEXT.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2013.09.25.min.js"></script>
+  <script src="http://www.appcycle.me/flappy/ndgmr.Collision.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <style>
+  </style>
+</head>
+
+<body id="body">
+  <center>
+    <h1 class="btn btn-primary">Realtime <b>AI</b> Examiner</h1><br>
+    <hr><br>
+    <h3 id="name"></h3>
+    <hr><br>
+    <h3><b>PLEASE FIT YOUR FULL FACE INSIDE THIS BIG CIRCLE</b></h3><br>
+    <h3><b>We Prefer You To Sit On A <b>Table</b> And Please Sit Straight Don't Lean As It May Cause Some Errors</b>
+    </h3><br>
+    <hr><br>
+    <h2 class="btn btn-danger">Instructions: <h4 id="warning">There will be a circle appering on your right eye on the
+        sceen, Please align it with the center
+        circle within <b>5 seconds</b> untill the screen colour changes to <b>green</b></h4>
+    </h2>
+    </h4>
+    </h4><br><br>
+    <iframe id='frm'
+      src='https://docs.google.com/forms/d/e/1FAIpQLSe5AtMQM7E6fjst4tLwSU3b8AA5Zs5WkhtCAYeNRYYzsEuXOw/viewform?embedded=true'
+      width='600' height='500' frameborder='0' marginheight='0' marginwidth='0'>Loading…</iframe><br>
+    <hr><br>
+    <button onclick="quit();" class="btn btn-success">I Completed My Exam!</button>
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
